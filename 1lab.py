@@ -9,7 +9,7 @@ FPS = 50
 STEP = 50
 size = width, height = 500, 500
 screen = pygame.display.set_mode(size)
-pygame.display.set_caption('Перемещение')
+pygame.display.set_caption('Перемещение. Дополнительные уровни')
 clock = pygame.time.Clock()
 
 all_sprites = pygame.sprite.Group()
@@ -65,7 +65,8 @@ def terminate():
 
 def start_screen():
     intro_text = ["Перемещение героя", "",
-                  "Карта на месте"]
+                  "Карта на месте",
+                  "Дополнительные уровни"]
 
     fon = pygame.transform.scale(load_image('fon.jpg'), size)
     screen.blit(fon, (0, 0))
